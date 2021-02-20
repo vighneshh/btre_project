@@ -83,8 +83,10 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'd9t70uqkf1obq1',
+        'USER': 'xtxydkvnrinmzq',
+        'PASSWORD': 'd38b41101508cda2919287586899f990b501fe480b37f9cfdd0c1e2b1ff3f485',
+        'HOST': 'ec2-54-237-143-127.compute-1.amazonaws.com'
     }
 }
 
