@@ -1,1 +1,1 @@
-web: waitress-serve btre.wsgi:application
+web: waitress-serve --listen "*:$PORT" btre.wsgi:application
