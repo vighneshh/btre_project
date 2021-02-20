@@ -1,0 +1,1 @@
+web: waitress-serve btre.wsgi:application

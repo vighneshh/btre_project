@@ -82,10 +82,8 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
-        'USER': 'postgres',
-        'PASSWORD': '123456',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -142,7 +140,5 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+# Email config
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
